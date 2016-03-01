@@ -1,0 +1,27 @@
+// Calculo De Area.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+	float altura, base, area;
+
+		cout<< "!Calcular el area de un traingulo con solo base y altura!";
+		cout<< "                       ";
+
+		cout<< "Ingrese la altura: ";
+		cin>> altura;
+
+		cout<<"Ingrese la Base: ";
+		cin>> base;
+
+		area=(base*altura)/2;
+		cout<<"El area es de: "<<area, cout<<" ,Felicidades lo lograste te mereces una galleta!";
+
+	getch();
+
+}
