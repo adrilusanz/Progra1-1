@@ -1,0 +1,25 @@
+// Calculo De Area.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+	float radio, area;
+
+		cout<< "!Calculemo el area de un Circulo!";
+		cout<< "                               ";
+
+		cout<< "Ingrese el Radio: ";
+		cin>> radio;
+
+		area=radio*radio*3.141516;
+
+		cout<<"El area es de: "<<area, cout<<" ,Felicidades lo lograste te mereces una galleta!";
+
+	getch();
+
+}
