@@ -1,0 +1,27 @@
+Proceso sin_titulo
+	
+	Definir P1, P2, P3, Final, Practica, Promedio como Real;
+	
+	Escribir "Ingresar nota del Primer Parcial";
+	Leer P1;
+	
+	
+	Escribir "Ingresar nota del Segundo Parcial";
+	Leer P2;
+	
+	
+	Escribir "Ingresar nota del Tercer Parcial";
+	Leer P3;
+	
+	
+	Escribir "Ingresar nota del Examen Final";
+	Leer Final;
+	
+	
+	Escribir "Ingresar nota Practica";
+	Leer Practica;
+	
+	Promedio<-(((P1+P2+P3)/3)*0.4)+(Final*0.4)+(Practica*0.2)
+	Escribir "Felicidades te sacaste ", Promedio;
+	
+FinProceso
