@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+	float x;
+	int s,i,n;
+	s=0;
+		do{
+			cout<< "Ingrese el valor de n: ";
+			cin>>n;
+		}while (n<=0);
+		do{
+			cout<< "Ingrese el valor de x: ";
+			cin>>x;
+		}while (x<=0);
+		i=1;
+		while (i<=n)
+		{
+			s=s+pow(x,1);
+			i++;
+		}
+		cout<< "El resultado es: "<< s << endl;
+		getch();
+}
