@@ -28,7 +28,6 @@ using namespace std;
 				cout<<"Ingrese el proximo codigo: "<<endl;
 				cin>>codigo;
 				cantprestamo=cantprestamo+1;
-				monto=chupacabra;
 				if (monto<=monto){
 					menor=monto;}
 
