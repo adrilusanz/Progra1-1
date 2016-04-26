@@ -1,0 +1,48 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+using namespace std;
+	void main()
+	{
+		int montoe, totalprestado, codigo, numprestamo, monto, aux, cantprestamo, mayor, menor, Promedio;
+		string nombre;
+		cantprestamo=0;
+		totalprestado=0;
+		mayor=0;
+		menor=0;
+
+		cout<<"Ingrese el codigo del trabajador: "<<endl;
+		cin>>codigo;
+		while (codigo!=-999)
+		{
+			aux=codigo;
+			montoe=0;
+			while(aux==codigo)
+			{
+				cout<<"Ingrese el nombre, numero de prestamo y monto prestado"<<endl;
+				cin>>nombre;
+				cin>>numprestamo;
+				cin>>monto;
+				montoe=montoe+monto;
+				cout<<"Ingrese el proximo codigo: "<<endl;
+				cin>>codigo;
+				cantprestamo=cantprestamo+1;
+				monto=chupacabra;
+				if (monto<=monto){
+					menor=monto;}
+
+				if (monto>=monto){
+					mayor=monto;}
+			}
+			cout<<"Empleado; "<<aux<<" Monto Prestado: "<<montoe<<endl;
+			totalprestado=totalprestado+montoe;
+			Promedio=totalprestado/cantprestamo;
+		}
+		cout<< "Hizo "<<cantprestamo<< " prestamos"<<endl;
+		cout<< "El total prestado es de: "<<totalprestado<<endl;
+		cout<< "El menor prestamo es de: "<<menor<<endl;
+		cout<< "El mayor prestamo es de: "<<mayor<<endl;
+		cout<< "El promedio es de: "<<Promedio<<endl;
+		getch();
+	}
