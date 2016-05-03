@@ -1,0 +1,49 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "string"
+using namespace std;
+
+float Valor_Ganado(float NDH, float CPH);
+
+void main() 
+
+{
+	int TotalEmpleados,i,s;
+    float NDH, CPH, ValorGanado;
+	string Moneda;
+	i=0;
+	s=0;
+	cout<<"Cuantos empleados son?"<<endl;
+	cin>>TotalEmpleados;
+
+	cout<<"En que moneda se le pagara:"<<endl;
+	cin >> Moneda;
+
+	while(TotalEmpleados>i)
+	{
+	do{
+    cout <<"Ingrese el numero de horas trabajadas:"<<endl;
+	cin >> NDH;
+	}while (NDH<0);
+
+	do{
+    cout <<"Ingrese el costo por hora:"<<endl;
+	cin >> CPH;
+	}while (CPH<0);
+
+    ValorGanado= Valor_Ganado(NDH,CPH); 
+	cout <<"El monto ganado es de:" <<endl<<ValorGanado<<" "<<Moneda<<endl;
+	s=s+ValorGanado;
+	i++;
+	}
+	cout <<"El monto total pagado es de:" <<endl<<s<<" "<<Moneda<<endl;
+    getch(); 
+ }
+
+float Valor_Ganado (float NDH, float CPH)
+{ 
+	float VG;
+	VG=NDH*CPH;	
+    return VG;   
+}
